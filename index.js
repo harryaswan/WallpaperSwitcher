@@ -2,10 +2,10 @@ const fs = require('fs');
 const request = require('request');
 const Promise = require("bluebird");
 const exec = require("child_process").exec;
-const imgur = require("./modules/imgur.js");
-const core = require("./modules/core.js");
-const os = require("./modules/os.js");
-const helper = require("./modules/imgur.js");
+const imgur = require("./lib/imgur.js");
+const core = require("./lib/core.js");
+const os = require("./lib/os.js");
+const helper = require("./lib/imgur.js");
 
 const TIMEDELAY = 3600000;
 const DEBUGTIME = 15000;
