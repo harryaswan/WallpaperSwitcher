@@ -168,8 +168,21 @@ var app = {
         // console.log('Setting wallpaper, ', path);
         // exec("ruby setBG.rb " + path);
         console.log("file://"+__dirname+"/"+path);
-        exec("gsettings set org.gnome.desktop.background picture-uri file://"+__dirname+"/"+path);
-        exec("gsettings set org.gnome.desktop.background picture-options centered");
+        switch (process.platform) {
+            case "linux":
+                console.log("Setting for linux");
+                exec("gsettings set org.gnome.desktop.background picture-uri file://"+__dirname+"/"+path);
+                exec("gsettings set org.gnome.desktop.background picture-options centered");
+                break;
+            case "darwin":
+                console.log("Setting for mac");
+                exec("mkdir test");
+                exec("sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db \"update data set value = '"+__dirname+"/"+path+"'\"; killall Dock;")
+                break;
+            default:
+
+        }
+
     },
     pickRandomumber: function (max) {
          return Math.floor(Math.random() * (max - 1));
@@ -208,7 +221,18 @@ var app = {
     }
 }
 
-app.go(1);
+// app.go(1);
+
+fs.stat('./imgs', function(err, stat) {
+    if(err == null) {
+        console.log('File exists');
+    } else if(err.code == 'ENOENT') {
+        // file does not exist
+        console.log("Create folders");
+    } else {
+        console.log('Some other error: ', err.code);
+    }
+});
 
 // app.downloadImage("http://i.imgur.com/TAK4bet.jpg", '.', 'test.jpg', function (err, path) {
 //     if(err) {
