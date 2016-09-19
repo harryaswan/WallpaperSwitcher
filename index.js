@@ -2,82 +2,16 @@ const fs = require('fs');
 const request = require('request');
 const Promise = require("bluebird");
 const exec = require("child_process").exec;
+const imgur = require("./modules/imgur.js");
+const core = require("./modules/core.js");
+const os = require("./modules/os.js");
+const helper = require("./modules/imgur.js");
+
 const TIMEDELAY = 3600000;
 const DEBUGTIME = 15000;
 
 
-
-var imgur = {
-    getCode: function (url) {
-        if (url.lastIndexOf('/') + 1 === url.length) {
-            url.substring(0, url.lastIndexOf('/'));
-        }
-
-        return url.substring(url.lastIndexOf('/')+1);
-    },
-    generateOpts: function (code, album) {
-        var url;
-        if (album) {
-            url = "https://api.imgur.com/3/album/"+code+"/images";
-        } else {
-            url = "https://api.imgur.com/3/image/"+code;
-        }
-        return {
-            url: url,
-            headers: {
-                'Authorization': 'Client-ID 905f8623e29ae6a'
-            }
-        }
-    }
-}
 var app = {
-    getData: function (opts, json) {
-        console.log("Getting data:", opts);
-        if (json === undefined) json = true;
-        return new Promise(function(resolve, reject) {
-            request(opts, function (error, response, body) {
-                if (!error && response.statusCode == 200) {
-                    if (json) {
-                        resolve(JSON.parse(body));
-                    } else {
-                        resolve(body);
-                    }
-                } else {
-                    reject(error, response, body);
-                }
-            });
-        });
-    },
-    downloadImage: function (url, path, filename, callback) {
-        var opts = {
-            url: url,
-            encoding: 'binary'
-        }
-        console.log(filename, filename.lastIndexOf('.'));
-        if (!filename || filename.lastIndexOf('.') === -1) {
-            callback("No File Name");
-        } else {
-            var fullPath = path + '/' + filename;
-            this.getData(opts, false)
-            .then(function (data) {
-                fs.writeFile(fullPath, data, 'binary', function (err) {
-                    if(err) {
-                        console.log("ERROR:", err);
-                    } else {
-                        if(callback) {
-                            callback(null, fullPath);
-                        }
-                    }
-                });
-            })
-            .catch(function (err, res) {
-                console.error(err);
-                callback(err, null)
-            });
-        }
-
-    },
-
     imgurDownload: function(rawURL) {
         var code = imgur.getCode(rawURL);
         var opts = imgur.generateOpts(code);
@@ -164,47 +98,8 @@ var app = {
         run();
 
     },
-    setWallpaper: function (path) {
-        // console.log('Setting wallpaper, ', path);
-        // exec("ruby setBG.rb " + path);
-        console.log("file://"+__dirname+"/"+path);
-        switch (process.platform) {
-            case "linux":
-                console.log("Setting for linux");
-                exec("gsettings set org.gnome.desktop.background picture-uri file://"+__dirname+"/"+path);
-                exec("gsettings set org.gnome.desktop.background picture-options centered");
-                break;
-            case "darwin":
-                console.log("Setting for mac");
-                exec("mkdir test");
-                exec("sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db \"update data set value = '"+__dirname+"/"+path+"'\"; killall Dock;")
-                break;
-            default:
 
-        }
 
-    },
-    pickRandomumber: function (max) {
-         return Math.floor(Math.random() * (max - 1));
-    },
-    getFilename: function (url) {
-        return url.substring(url.lastIndexOf('/') + 1);
-    },
-    cleanURL: function (url) {
-        var modifiers = [
-            {
-                o: "&amp;",
-                n: "&"
-            }
-        ];
-        for (var i =0; i < modifiers.length; i++) {
-            while(url.indexOf(modifiers[i].o) > -1) {
-                console.log('changing url');
-                url = url.replace(modifiers[i].o, modifiers[i].n);
-            }
-        }
-        return url;
-    },
     go: function (id) {
         console.log("Running run number " + id + "...");
 
@@ -221,18 +116,15 @@ var app = {
     }
 }
 
+
+os.checkFolders();
+
+
+
+
 // app.go(1);
 
-fs.stat('./imgs', function(err, stat) {
-    if(err == null) {
-        console.log('File exists');
-    } else if(err.code == 'ENOENT') {
-        // file does not exist
-        console.log("Create folders");
-    } else {
-        console.log('Some other error: ', err.code);
-    }
-});
+
 
 // app.downloadImage("http://i.imgur.com/TAK4bet.jpg", '.', 'test.jpg', function (err, path) {
 //     if(err) {
