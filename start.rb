@@ -1,6 +1,6 @@
 puts "starting...."
 
-pid = spawn("node index.js", :out => "test.out", :err => "test.err")
+pid = spawn("node index.js", :out => "./test/test.out", :err => "./test/test.err")
 
 # pid = fork do
 #   exec "node index.js"
