@@ -1,6 +1,10 @@
 
-const app = require("./lib/app.js");
+const application = require("./lib/app.js");
 const checkFolders = require("./lib/os").checkFolders;
+
+var config = "test";
+
+var app = new application(config);
 
 checkFolders();
 app.go(1);
