@@ -1,9 +1,9 @@
 Running run number 1...
 Getting data: https://reddit.com/r/wallpapers/.json
 number of children: 25
-Selected URL: https://cdnb1.artstation.com/p/assets/images/images/003/430/537/large/quentin-mabille-futura-def.jpg?1473608164
-quentin-mabille-futura-def.jpg?1473608164 26
-Getting data: { url: 'https://cdnb1.artstation.com/p/assets/images/images/003/430/537/large/quentin-mabille-futura-def.jpg?1473608164',
-  encoding: 'binary' }
-Saved in ./imgs/sImages/quentin-mabille-futura-def.jpg?1473608164
-set wallpaper
+Selected URL: http://i.imgur.com/tFdfiIY.jpg
+tFdfiIY.jpg 7
+Getting data: { url: 'http://i.imgur.com/tFdfiIY.jpg', encoding: 'binary' }
+Saved in ./imgs/sImages/tFdfiIY.jpg
+Setting for linux
+file /home/harry/Documents/Dev/redditProject/imgs/sImages/tFdfiIY.jpg

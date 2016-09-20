@@ -1,6 +1,8 @@
 
 const application = require("./lib/app.js");
 const checkFolders = require("./lib/os").checkFolders;
+const path = require('path');
+global.appRoot = path.resolve(__dirname);
 
 var config = "test";
 
