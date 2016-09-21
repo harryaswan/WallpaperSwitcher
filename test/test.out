@@ -1,9 +1,54 @@
 Running run number 1...
 Getting data: https://reddit.com/r/wallpapers/.json
 number of children: 25
-Selected URL: http://i.imgur.com/tFdfiIY.jpg
-tFdfiIY.jpg 7
-Getting data: { url: 'http://i.imgur.com/tFdfiIY.jpg', encoding: 'binary' }
-Saved in ./imgs/sImages/tFdfiIY.jpg
-Setting for linux
-file /home/harry/Documents/Dev/redditProject/imgs/sImages/tFdfiIY.jpg
+Selected URL: http://imgur.com/gallery/WLnSe2J
+Getting data: { url: 'https://api.imgur.com/3/image/WLnSe2J',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+WLnSe2J.jpg 7
+Getting data: { url: 'http://i.imgur.com/WLnSe2J.jpg', encoding: 'binary' }
+set imgrwal
+set wallpaper
+Running run number 2...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: http://imgur.com/a/JEr9v
+Getting data: { url: 'https://api.imgur.com/3/image/JEr9v',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+Getting data: { url: 'https://api.imgur.com/3/album/JEr9v/images',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+got data
+jlOtgFU.jpg 7
+Getting data: { url: 'http://i.imgur.com/jlOtgFU.jpg', encoding: 'binary' }
+set imgrwal
+set wallpaper
+Running run number 3...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/1u1fcteoepmx.jpg
+1u1fcteoepmx.jpg 12
+Getting data: { url: 'https://i.redd.it/1u1fcteoepmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 4...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/bhemqwzuupmx.png
+bhemqwzuupmx.png 12
+Getting data: { url: 'https://i.redd.it/bhemqwzuupmx.png',
+  encoding: 'binary' }
+set wallpaper
+Running run number 5...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/psz1nb9etdmx.jpg
+psz1nb9etdmx.jpg 12
+Getting data: { url: 'https://i.redd.it/psz1nb9etdmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 6...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: http://i.imgur.com/dLoIkF9.png
+dLoIkF9.png 7
+Getting data: { url: 'http://i.imgur.com/dLoIkF9.png', encoding: 'binary' }
+set wallpaper

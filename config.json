@@ -1,0 +1,10 @@
+{
+    "image_folder":"./imgs",
+    "max_time":3600000,
+    "min_time":60000,
+    "subreddits": [
+        "wallpapers",
+        "earthporn",
+        "wallpaperdump"
+    ]
+}
