@@ -1,15 +1,22 @@
 
 const application = require("./lib/app.js");
-const checkFolders = require("./lib/os").checkFolders;
+const os = require("./lib/os");
 const path = require('path');
 global.appRoot = path.resolve(__dirname);
 
-var config = "test";
+os.loadFile(global.appRoot + "/config.json")
+.then(function (data) {
+    var config = JSON.parse(data);
+    console.log('config loaded', config);
+    var app = new application(config);
 
-var app = new application(config);
+    os.checkFolders();
+    // app.go(1);
 
-checkFolders();
-app.go(1);
+})
+.catch(function (err) {
+    console.log("Could not load config", err);
+})
 
 
 

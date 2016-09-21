@@ -52,3 +52,117 @@ Selected URL: http://i.imgur.com/dLoIkF9.png
 dLoIkF9.png 7
 Getting data: { url: 'http://i.imgur.com/dLoIkF9.png', encoding: 'binary' }
 set wallpaper
+Running run number 7...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/pd8cc1mhgimx.jpg
+pd8cc1mhgimx.jpg 12
+Getting data: { url: 'https://i.redd.it/pd8cc1mhgimx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 8...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://cdnb3.artstation.com/p/assets/images/images/000/744/299/large/shen-fei-arrival.jpg?1443930283
+shen-fei-arrival.jpg?1443930283 16
+Getting data: { url: 'https://cdnb3.artstation.com/p/assets/images/images/000/744/299/large/shen-fei-arrival.jpg?1443930283',
+  encoding: 'binary' }
+set wallpaper
+Running run number 9...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: http://imgur.com/a/PAERb
+Getting data: { url: 'https://api.imgur.com/3/image/PAERb',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+Getting data: { url: 'https://api.imgur.com/3/album/PAERb/images',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+got data
+8JQvcGS.jpg 7
+Getting data: { url: 'http://i.imgur.com/8JQvcGS.jpg', encoding: 'binary' }
+set imgrwal
+set wallpaper
+Running run number 10...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://cdna2.artstation.com/p/assets/images/images/003/452/278/large/houwai-leung-.jpg?1473823396
+houwai-leung-.jpg?1473823396 13
+Getting data: { url: 'https://cdna2.artstation.com/p/assets/images/images/003/452/278/large/houwai-leung-.jpg?1473823396',
+  encoding: 'binary' }
+set wallpaper
+Running run number 11...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://cdnb1.artstation.com/p/assets/images/images/003/074/405/large/rumyana-zarkova-naga-second-panel-ver2.jpg?1469348769
+rumyana-zarkova-naga-second-panel-ver2.jpg?1469348769 38
+Getting data: { url: 'https://cdnb1.artstation.com/p/assets/images/images/003/074/405/large/rumyana-zarkova-naga-second-panel-ver2.jpg?1469348769',
+  encoding: 'binary' }
+set wallpaper
+Running run number 12...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: http://imgur.com/a/swhrw
+Getting data: { url: 'https://api.imgur.com/3/image/swhrw',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+Getting data: { url: 'https://api.imgur.com/3/album/swhrw/images',
+  headers: { Authorization: 'Client-ID 905f8623e29ae6a' } }
+got data
+W7dPybX.jpg 7
+Getting data: { url: 'http://i.imgur.com/W7dPybX.jpg', encoding: 'binary' }
+set imgrwal
+set wallpaper
+Running run number 13...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://cdna2.artstation.com/p/assets/images/images/003/452/278/large/houwai-leung-.jpg?1473823396
+houwai-leung-.jpg?1473823396 13
+Getting data: { url: 'https://cdna2.artstation.com/p/assets/images/images/003/452/278/large/houwai-leung-.jpg?1473823396',
+  encoding: 'binary' }
+set wallpaper
+Running run number 14...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/psz1nb9etdmx.jpg
+psz1nb9etdmx.jpg 12
+Getting data: { url: 'https://i.redd.it/psz1nb9etdmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 15...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/jc7ln195prmx.jpg
+jc7ln195prmx.jpg 12
+Getting data: { url: 'https://i.redd.it/jc7ln195prmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 16...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/5yw4adtd5pmx.jpg
+5yw4adtd5pmx.jpg 12
+Getting data: { url: 'https://i.redd.it/5yw4adtd5pmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 17...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/pd8cc1mhgimx.jpg
+pd8cc1mhgimx.jpg 12
+Getting data: { url: 'https://i.redd.it/pd8cc1mhgimx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 18...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/5yw4adtd5pmx.jpg
+5yw4adtd5pmx.jpg 12
+Getting data: { url: 'https://i.redd.it/5yw4adtd5pmx.jpg',
+  encoding: 'binary' }
+set wallpaper
+Running run number 19...
+Getting data: https://reddit.com/r/wallpapers/.json
+number of children: 25
+Selected URL: https://i.redd.it/5yw4adtd5pmx.jpg
+5yw4adtd5pmx.jpg 12
+Getting data: { url: 'https://i.redd.it/5yw4adtd5pmx.jpg',
+  encoding: 'binary' }
+set wallpaper
