@@ -7,11 +7,11 @@ global.appRoot = path.resolve(__dirname);
 os.loadFile(global.appRoot + "/config.json")
 .then(function (data) {
     var config = JSON.parse(data);
-    console.log('config loaded', config);
+    console.log('config loaded');
     var app = new application(config);
 
     os.checkFolders();
-    // app.go(1);
+    app.go(1);
 
 })
 .catch(function (err) {

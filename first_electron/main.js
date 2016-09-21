@@ -19,7 +19,14 @@ function createWindow () {
     })
 }
 
-app.on('ready', createWindow)
+
+
+function startup() {
+    createWindow();
+
+}
+
+app.on('ready', startup)
 
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') {
