@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "electron": "cd first_electron/. && electron ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.6",
+    "moment": "^2.15.1",
     "request": "^2.74.0",
     "wallpaper": "^2.3.0"
   }

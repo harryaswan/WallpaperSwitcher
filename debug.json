@@ -1,0 +1,8 @@
+{
+    "image_folder":"./imgs",
+    "max_time":15000,
+    "min_time":1000,
+    "subreddits": [
+        "wallpaperdump"
+    ]
+}
