@@ -19,8 +19,6 @@ function createWindow () {
     })
 }
 
-
-
 function startup() {
     createWindow();
 
@@ -40,4 +38,5 @@ app.on('activate', function () {
     }
 })
 
+require('./main-process/wallpaperManager.js')
 require('./main-process/first_screen.js')
