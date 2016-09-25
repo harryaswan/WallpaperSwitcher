@@ -1,18 +1,21 @@
 {
-  "name": "redditProject",
-  "version": "0.0.0",
-  "description": "",
+  "name": "HASWallpaperManager",
+  "version": "0.0.5",
+  "description": "Will be a library for download images and setting as your wallpaper. Is a work in progress.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "electron": "cd first_electron/. && electron ."
+    "test": "echo 'No tests currently' && exit -1"
   },
-  "author": "",
+  "author": "Harry A. Swan <harry@harryaswan.co.uk> (http://harryaswan.co.uk)",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.4.6",
     "moment": "^2.15.1",
     "request": "^2.74.0",
     "wallpaper": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryaswan/WallpaperSwitcher.git"
   }
 }
